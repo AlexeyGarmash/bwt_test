@@ -1,0 +1,13 @@
+{
+    "name": "vendor/tutor",
+    "description": "Описание проекта tutor.",
+    "authors": [
+        {
+            "name": "Alex",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "dev-master"
+    }
+}
