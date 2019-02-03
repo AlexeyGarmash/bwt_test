@@ -1,0 +1,92 @@
+.weather {
+    border:1px solid black;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #336699;
+    border-radius: 20px;
+    color: white;
+}
+
+.weatherday {
+    border:1px solid black;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-color: #336699;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.weather-head {
+    height: 50%;
+}
+
+#icon-desc {
+    font-size: 5rem;
+    padding-top: 2rem;
+}
+
+.humidityNow, .windNow, .pressureNow {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 2.5rem;
+
+}
+
+#description {
+    font-size: 2rem;
+}
+
+#temperature {
+    font-size: 7rem;
+}
+
+#icon-thermometer {
+    font-size: 5rem;
+}
+
+#humidity, #wind, #pressure {
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+blockquote{
+    border-left:none
+}
+
+.quote-badge{
+    background-color: azure;
+    color:black;
+}
+
+.quote-box{
+
+    overflow: hidden;
+    margin-top: -50px;
+    padding-top: -100px;
+    border-radius: 17px;
+    background-color: #223676;
+    margin-top: 25px;
+    color:white;
+    width: auto;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+
+}
+
+.quotation-mark{
+
+    margin-top: -10px;
+    font-weight: bold;
+    font-size:100px;
+    color:white;
+    font-family: "Times New Roman", Georgia, Serif;
+
+}
+
+.quote-text{
+
+    font-size: 19px;
+    margin-top: -65px;
+}

@@ -49,6 +49,7 @@ class Route {
         }
 
         $controller = new $controller_name;
+        //echo $controller_name;
         $action = $action_name;
 
         if (method_exists($controller, $action)) {

@@ -63,7 +63,10 @@ class Model_main extends Model {
     public function register($name, $secname, $email, $password, $gender, $bdate) {
         $mysqli = new mysqli("localhost", "root", "", "bwt_test");
         $mysqli->query("SET NAMES 'utf8'");
-        $sql = "INSERT INTO users (Name, SecondName, Mail, Password, Sex, Bdate) VALUES ('$name', '$secname', '$email', '$password', '$gender', null)";
+        echo $bdate;
+        $newDate = strtotime($bdate);
+        $newDate = date('Y-m-d', $newDate);
+        $sql = "INSERT INTO users (Name, SecondName, Mail, Password, Sex, Bdate) VALUES ('$name', '$secname', '$email', '$password', '$gender', '$newDate')";
         // Получение и возврат результатов. Используется подготовленный запрос
         $res = $mysqli->query($sql);
         if ($res == true) {
@@ -82,7 +85,9 @@ class Model_main extends Model {
         $res = $mysqli->query($sql);
         $num_rows = mysqli_num_rows($res);
         $mysqli->close();
-        return $num_rows > 0;
+        $ret_data['ret'] = $num_rows > 0;
+        $ret_data['data'] = $res;
+        return $ret_data;
     }
 
 }
